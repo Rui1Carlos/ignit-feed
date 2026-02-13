@@ -158,7 +158,6 @@ main .primeiro-card,
     align-items: center;
 }
 .sobre .name{
-    font-family: Roboto;
 font-weight: 700;
 font-style: Bold;
 font-size: 16px;
@@ -170,7 +169,7 @@ color: #E1E1E6;
 
 }
 .sobre .funcao{
-    font-family: Roboto;
+
 font-weight: 400;
 font-style: Regular;
 font-size: 14px;
@@ -181,12 +180,49 @@ vertical-align: middle;
 color: #8D8D99;
 }
 .card-lateral hr{
+    margin-top:24px ;
     width: 256;
 height: 0px;
 opacity: 1;
 top: 188px;
 border-width: 1px;
 color: #323238;
+
+}
+.editar-perfil{
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+
+width: 192;
+height: 50;
+top: 212px;
+left: 32px;
+border-radius: 8px;
+gap: 10px;
+border: 1px solid #00B37E;
+background-color: #202024;
+padding-top: 16px;
+padding-right: 24px;
+padding-bottom: 14px;
+padding-left: 24px;
+margin: 32px 24px;
+display: flex; 
+justify-content: center;  
+align-items: center;  
+
+cursor: pointer;
+
+}
+.editar-perfil p{
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #00B37E;
 
 }
 
