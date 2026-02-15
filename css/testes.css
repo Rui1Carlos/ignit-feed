@@ -183,13 +183,13 @@ main .primeiro-card,
   color: #8d8d99;
 }
 .card-lateral hr {
-  margin-top: 24px;
-  width: 256;
+  
+  width: 256px;
   height: 0px;
   opacity: 1;
   top: 188px;
-  border-width: 1px;
-  color: #323238;
+  border-width: 0.5px;
+  color: #323238a6;
 }
 .botao {
   display: flex;
@@ -391,6 +391,7 @@ left: 136px;*/
   padding-left: 24px;
   background-color: #00875f;
   cursor: pointer;
+  border: 1px;
 }
 .conteudo .publicar p{
 font-weight: 700;
@@ -436,7 +437,7 @@ color: #FFFFFF;
   display: none; /* escondido por padrão */
 }
 
-/* Quando o modal é alvo (:target) */
+/* Quando o modal é clicado (:target) */
 .modal:target {
   display: block;
 }
