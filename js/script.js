@@ -1,0 +1,2 @@
+let posts = []
+let coment = []
