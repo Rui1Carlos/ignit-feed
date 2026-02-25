@@ -5,25 +5,15 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0;
   background-color: #121214;
   font-family: "Roboto", sans-serif;
-  width: 100%;
 }
 .principal {
-  max-width: 1440px;
   width: 100%;
-  height: 2037px;
-  padding: 0 1rem;
 }
 
 header {
   background-color: #202024;
-  max-width: 1440px;
   width: 100%;
   height: 100px;
   display: flex;
@@ -36,8 +26,6 @@ header {
   /* o Horizontal é row*/
   width: 208.07px;
   height: 60.76px;
-  top: 20px;
-  left: 616px;
   gap: 15.99px;
   display: flex;
   align-items: center;
@@ -69,21 +57,15 @@ header {
 /*FIM CSS DO HEADER*/
 .container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  min-height: 100vh;
   width: 100%;
+  gap: 40px;
+  padding: 30px 100px;
 }
 
 .primeiro-card {
   background-color: #202024;
-  max-width:832px;
-  width:100% ;
-  max-height: 621px;
-  top: 132px;
-  left: 448px;
   border-radius: 8px;
-  opacity: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -91,23 +73,12 @@ header {
 }
 
 .card-maior {
-  max-width: 832px;
   background-color: #202024;
-  width: 100%;
   /*DEIXEIXEI SEM ALTURA PARA PODER CRESCER A MEDIDA QUE FOR INSERIDO O CONTEUDO*/
   /*height: 1104px;*/
-  opacity: 1;
-  top: 785px;
-  left: 448px;
   border-radius: 8px;
 }
 
-main .primeiro-card,
-.card-maior,
-.card-lateral {
-  margin: 30px;
-  /*usei margem nas div´s para dar o espaçamento, já que estavam juntas.*/
-}
 .primeiro-card,
 .card-maior {
   padding: 40px;
@@ -116,15 +87,15 @@ main .primeiro-card,
 /*CSS CARD LATERAL*/
 .card-lateral {
   background-color: #202024;
-  width: 256px;
-  /*height: 294px;*/
-  top: 132px;
-  left: 160px;
+ overflow: hidden;
+  
   border-radius: 8px;
 }
 
 #img-capa {
-  width: 256px;
+  width: 100%;
+  object-fit: cover;
+  
   height: 72px;
   opacity: 70%;
 }
@@ -152,9 +123,9 @@ main .primeiro-card,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-      position: relative;
-    z-index: 3;
-    top: -40px;
+  position: relative;
+  z-index: 3;
+  top: -40px;
 }
 .sobre {
   display: flex;
@@ -183,13 +154,8 @@ main .primeiro-card,
   color: #8d8d99;
 }
 .card-lateral hr {
-  
-  width: 256px;
-  height: 0px;
-  opacity: 1;
   top: 188px;
-  border-width: 0.5px;
-  color: #323238a6;
+  border: 1px solid #323238a6;
 }
 .botao {
   display: flex;
@@ -226,102 +192,96 @@ main .primeiro-card,
   color: #00b37e;
 }
 
-.reacoes{
+.reacoes {
   background: none;
   border: none;
   cursor: pointer;
   width: 111px;
-height: 20px;
-top: 684px;
-left: 106px;
-gap: 7px;
-padding-top: 16px;
+  height: 20px;
+  top: 684px;
+  left: 106px;
+  gap: 7px;
+  padding-top: 16px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.comentario{
+.comentario {
   display: flex;
-  flex-wrap: wrap;
   align-items: start;
   gap: 16px;
-
-  max-width: 752px;
-height: 156px;
-top: 548px;
-left: 40px;
-
-
+  height: 156px;
+  
 }
-.coment{
-      display: grid;
-    gap: 10px;
-  width: 686px;
-height: 120px;
-top: 548px;
-left: 106px;
-border-radius: 9px;
-
-
+.coment {
+  display: grid;
+  gap: 10px;
+  max-width: 686px;
+  height: 120px;
+  top: 548px;
+  left: 106px;
+  border-radius: 9px;
 }
-.coment .sobre{
+.coment .sobre {
   align-items: flex-start;
 }
-.coment .texto{
+.coment .texto {
   /*retirei a altura para deixar o elemento livre*/
- /*max-width: 213px;*/
-height: 22px;
-top: 73px;
-left: 16px;
-padding-top: 16px;
+  /*max-width: 213px;*/
+  height: 22px;
+  top: 73px;
+  left: 16px;
+  padding-top: 16px;
 
-font-weight: 400;
-font-style: Regular;
-font-size: 14px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
 
-line-height: 160%;
-letter-spacing: 0;
+  line-height: 160%;
+  letter-spacing: 0;
 
-
-color: #C4C4CC;
-
+  color: #c4c4cc;
 }
 
-.coment .campo{
-  padding: 16px;
-  width: 686px;
-height: 120px;
-top: 548px;
-left: 106px;
-border-radius: 9px;
+.coment .campo {
+      display: flex;
+    flex-direction: column;
+  padding: 10px;
+  /*
+  max-width: 100%;
+  min-width: 200px;*/
+  width: 100vh;
+  height: 120px;
+  top: 548px;
+  left: 106px;
+  border-radius: 9px;
 
-
-  background-color: #29292E;
+  background-color: #29292e;
 }
 
-.reacoes p{
- color: #8D8D99;
+.reacoes p {
+  color: #8d8d99;
 
-font-weight: 700;
-font-style: Bold;
-font-size: 14px;
-line-height: 100%;
-letter-spacing: 0;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
 
-/*width: 81px;
+  /*width: 81px;
 height: 16px;
 top: 686px;
 left: 136px;*/
-
 }
-.aplaudido p{
-  color: #00B37E;
+.aplaudido p {
+  color: #00b37e;
 }
-.comentarios{
+.comentarios {
   display: grid;
   gap: 24px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /*CARD DIREITO*/
@@ -362,7 +322,7 @@ left: 136px;*/
   letter-spacing: 0%;
 }
 .conteudo textarea {
-  max-width: 752px; 
+  max-width: 752px;
   /*width: 100%;*/ /* ao ives de usar os tamnhos fixos, usei min e max para poder ter uma responsividade certa*/
   max-height: 96px;
   min-height: 96px;
@@ -371,17 +331,17 @@ left: 136px;*/
   left: 40px;
   border-radius: 8px;
   border: 1px solid #00b37e;
-  padding: 0;
+  padding: 30px 20px;
   resize: none;
+  color: #ffffff;
 }
 .card-maior .conteudo textarea {
   border: 1px solid;
-
 }
 .conteudo .publicar {
   max-width: 108px;
   width: 100%;
-  
+
   top: 532px;
   left: 40px;
   border-radius: 8px;
@@ -393,13 +353,12 @@ left: 136px;*/
   cursor: pointer;
   border: 1px;
 }
-.conteudo .publicar p{
-font-weight: 700;
-font-style: Bold;
-font-size: 16px;
-line-height: 100%;
-color: #FFFFFF;
-
+.conteudo .publicar p {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
 }
 
 .conteudo {
@@ -414,26 +373,29 @@ color: #FFFFFF;
   color: #00b37e;
 }
 .conteudo hr {
-  max-width: 752px;
+  
   top: 354px;
   left: 40px;
-  border-width: 1px;
-  color: #323238;
+  border: 1px solid #323238a6;
 }
 .organizacao {
 }
 .direito {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-
 
 /*Modal*/
 
 /* Fundo escuro */
 .modal {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   display: none; /* escondido por padrão */
 }
 
@@ -450,110 +412,96 @@ color: #FFFFFF;
   position: relative;
 
   background: #202024;
-  width: 432PX;
-  height: 238PX;
+  width: 432px;
+  height: 238px;
   display: grid;
   align-items: center;
   justify-content: center;
   gap: 24px;
- /* top: 306px;
+  /* top: 306px;
   left: 504px;*/ /*ACHEI MELHOR USAR O MARGIN 10% AUTO PARA PODER SE ENQUADRAR NA RESPONSIVIDADE*/
 }
-.modal-excluir{
+.modal-excluir {
   display: grid;
   align-items: center;
   justify-content: center;
-  
 }
 
 /* Botão de fechar */
- .cancelar:hover, .confirmar:hover{
-  background-color: #29292E; /* cor de fundo */ 
-  border: none; 
-  border-radius: 6px; 
+.cancelar:hover,
+.confirmar:hover {
+  background-color: #29292e; /* cor de fundo */
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.8s ease;
-  
 }
 
-.modal h2{
-font-weight: 700;
-font-size: 24px;
-line-height: 140%;
-letter-spacing: 0;
-text-align: center;
-
+.modal h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0;
+  text-align: center;
 }
-.modal .p1{
+.modal .p1 {
   width: 240px;
-height: 52px;
+  height: 52px;
 
-font-weight: 400;
-font-size: 16px;
-line-height: 163%;
-letter-spacing: 0%;
-text-align: center;
-
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
-.botoes{
+.botoes {
   display: flex;
   align-items: center;
   justify-content: center;
-  background:none;
- 
-}
-.cancelar, .confirmar{
-border: none;
   background: none;
- /* width: 120px;*/
-height: 48px;
-border-radius: 8px;
-gap: 8px;
-padding-top: 12px;
-padding-right: 32px;
-padding-bottom: 12px;
-padding-left: 32px;
-
 }
-.cancelar p{
+.cancelar,
+.confirmar {
+  border: none;
+  background: none;
+  /* width: 120px;*/
+  height: 48px;
+  border-radius: 8px;
+  gap: 8px;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+}
+.cancelar p {
   width: 56px;
-height: 24px;
-color: #E1E1E6;
+  height: 24px;
+  color: #e1e1e6;
 
+  font-weight: 700;
+  font-size: 14px;
 
-font-weight: 700;
-font-size: 14px;
-
-line-height: 24px;
-letter-spacing: 0%;
-text-align: center;
-vertical-align: middle;
-
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.confirmar p{
-  /*width: 74px;*/ /*não estava dando certo com altura fixa*/
-height: 24px;
-color: #F75A68;
- 
-font-weight: 700;
-font-size: 14px;
-
-line-height: 24px;
-
-text-align: center;
-vertical-align: middle;
-
-}
-
-/*FIM DO MODAL*/
-
-/*PRIMEIRO ELEMENTO*/
-
-/* Responsivo: empilha verticalmente em telas menores 
 @media (max-width: 768px) {
-  .left, .right {
-    flex: 1 1 100%; 
+  .container {
+    flex-direction: column;
+    padding: 20px;
   }
-}*/
+
+  .sobre .name{
+    font-size: 12px;
+    
+  }
+  .coment p{
+    font-size: 10px;
+  }
+  .coment .campo{
+    max-width: 300px;
+  }
+}
